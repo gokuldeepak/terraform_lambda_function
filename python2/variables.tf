@@ -8,24 +8,24 @@ variable "AWS_SECRET_ACCESS_KEY" {
 
 
 #Lambda
-variable "lambda_name_2" {
+variable "lambda_name" {
   type = string
 }
-variable "runtime_version_2" {
+variable "runtime_version" {
   type = string
 }
-variable "handler_2" {
+variable "handler" {
     type = string
 }
-variable "layers_2" {
+variable "layers" {
   type = list(string)
 }
-variable "variables_env_2" {
+variable "variables_env" {
   type = map(string)
 }
-variable "memory_size_2" {
+variable "memory_size" {
   type = number
 }
-variable "timeout_2" {
+variable "timeout" {
   type = number
 }
