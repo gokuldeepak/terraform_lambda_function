@@ -1,8 +1,8 @@
 data "terraform_remote_state" "infra" {
     backend = "s3"
     config = {
-          bucket = "statefilebucket"
-          key    = "project/statefiles/infra.tfstate"
+          bucket = "gokuldeepak"
+          key    = "statefiles/infra.tfstate"
           region = "us-east-1"
     }
 }

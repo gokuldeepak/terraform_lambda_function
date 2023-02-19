@@ -23,7 +23,7 @@ module "lambda_function_2" {
       data.archive_file.python_zip
     ]
 }
-module "cloudwatch_permission_lambda_2" {
+module "eventbridge_permission_lambda_2" {
   source = "../modules/lambda_permission"
   statement_id = "AllowExecutionFromCloudWatch"
   action = "lambda:InvokeFunction"
@@ -32,8 +32,8 @@ module "cloudwatch_permission_lambda_2" {
   source_arn = module.cloudwatch_event_trigger_lambda_2.rule_arn
 }
  
-module "cloudwatch_event_trigger_lambda_2" {
-  source = "../modules/cloudwatch_event"
+module "eventbridge_event_trigger_lambda_2" {
+  source = "../modules/eventbridge"
   cw_event_rule_name = "Cloud Watch Event"
   cw_event_rule_description = "Trigger Lambda by every night"
   cw_event_rule_schedule_expression = "cron(30 16 ? * MON-FRI *)"

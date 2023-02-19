@@ -6,11 +6,11 @@ terraform {
       version = ">= 4.38"
     }
   }
-  #  backend "s3" {
-  #   bucket = "statefilebucket"
-  #   key    = "project/statefiles/data_extraction.tfstate"
-  #   region = "us-east-1"
-  #    }
+   backend "s3" {
+    bucket = "gokuldeepak"
+    key    = "statefiles/python1.tfstate"
+    region = "us-east-1"
+     }
   
 }
 
