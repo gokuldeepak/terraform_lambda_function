@@ -32,26 +32,26 @@ variable "vpc_tags" {
 
 #Subnet
 variable "public_subnet_name" {
-    type = list(string)
+    type = string
 }
 variable "public_subnet_ip_range" {
-    type = list(string)
+    type = string
 }
 variable "public_subnet_az" {
-    type = list(string)
+    type = string
 }
 variable "public_subnet_tags" {
   type = map(string)
 }
 
 variable "private_subnet_name" {
-    type = list(string)
+    type = string
 }
 variable "private_subnet_ip_range" {
-    type = list(string)
+    type = string
 }
 variable "private_subnet_az" {
-    type = list(string)
+    type = string
 }
 variable "private_subnet_tags" {
   type = map(string)

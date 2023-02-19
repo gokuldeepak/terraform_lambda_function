@@ -12,14 +12,23 @@ vpc_tags = {
     }
 
 
-public_subnet_name = ["Public-Subnet"]
-public_subnet_ip_range = ["10.0.0.0/24"]
-public_subnet_azs = ["us-east-1a"]
+#Subnet
+public_subnet_name = "Public-Subnet"
+public_subnet_ip_range = "10.0.0.0/24"
+public_subnet_az = "us-east-1a"
+public_subnet_tags = {
+        Business_Unit = ""
+        Environment = "Dev"
+    }
 
 
-private_subnet_name = ["Private-Subnet"]
-private_subnet_ip_range = ["10.0.1.0/24"] 
-private_subnet_azs = ["us-east-1a"]
+private_subnet_name = "Private-Subnet"
+private_subnet_ip_range = "10.0.1.0/24"
+private_subnet_az = "us-east-1a"
+private_subnet_tags = {
+        Business_Unit = ""
+        Environment = "Dev"
+    }
 
 
 #SG
