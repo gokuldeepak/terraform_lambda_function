@@ -22,3 +22,15 @@ variable "timeout" {
 variable "source_code_hash" {
     type = string
 }
+variable "layers" {
+    type = list(string)
+}
+variable "variables_env" {
+    type = map(string)
+}
+variable "subnet_id" {
+    type = string 
+}
+variable "sg_id" {
+    type = string
+}
