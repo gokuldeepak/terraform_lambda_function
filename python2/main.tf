@@ -29,7 +29,7 @@ module "eventbridge_permission_lambda_2" {
   action = "lambda:InvokeFunction"
   function_name = module.lambda_function_2.arn
   principal = "events.amazonaws.com"
-  source_arn = module.cloudwatch_event_trigger_lambda_2.rule_arn
+  source_arn = module.eventbridge_event_trigger_lambda_2.rule_arn
 }
  
 module "eventbridge_event_trigger_lambda_2" {
