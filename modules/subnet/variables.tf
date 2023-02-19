@@ -12,7 +12,6 @@ variable "subnet_az" {
 }
 variable "availability_zone_id" {
     type = string
-    default = []
 }
 variable "map_public_ip_on_launch" {
   type = bool
