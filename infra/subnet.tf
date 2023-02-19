@@ -14,7 +14,7 @@ module "public_subnet" {
 module "private_subnet" {
     source = "../modules/subnet"
     vpc_id = module.vpc.id
-    subnets_name = var.private_subnet_name
+    subnet_name = var.private_subnet_name
     cidr = var.private_subnet_ip_range
     subnet_az = var.private_subnet_az
     private_dns_hostname_type_on_launch = "ip-name"
