@@ -2,7 +2,7 @@ resource "aws_subnet" "this" {
   vpc_id                          = var.vpc_id
   cidr_block                      = var.cidr
   availability_zone               = var.subnet_az
-  availability_zone_id            = var.availability_zone_id
+  availability_zone_id            = var.subnet_az
   map_public_ip_on_launch  = var.map_public_ip_on_launch
   private_dns_hostname_type_on_launch = var.private_dns_hostname_type_on_launch
   enable_resource_name_dns_a_record_on_launch = var.enable_resource_name_dns_a_record_on_launch

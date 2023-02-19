@@ -10,9 +10,9 @@ variable "cidr" {
 variable "subnet_az" {
     type = string
 }
-variable "availability_zone_id" {
-    type = string
-}
+# variable "availability_zone_id" {
+#     type = string
+# }
 variable "map_public_ip_on_launch" {
   type = bool
   default = false
