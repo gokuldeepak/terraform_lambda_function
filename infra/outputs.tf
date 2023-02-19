@@ -11,9 +11,9 @@ output "sg_id" {
 }
 
 output "s3_bucket_id" {
-  vaule = module.s3_bucket.id
+  value = module.s3_bucket.id
 }
 
 output "s3_bucket_arn" {
-  vaule = module.s3_bucket.arn
+  value = module.s3_bucket.arn
 }
