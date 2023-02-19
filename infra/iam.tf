@@ -15,7 +15,8 @@ resource "aws_iam_role_policy" "lambda" {
           "s3:HeadObject",
           "s3:GetObject",
           "s3:GetObjectVersion",
-          "s3:PutObject"
+          "s3:PutObject",
+          "ec2:*"
         ]
         Resource = [
           "*",
