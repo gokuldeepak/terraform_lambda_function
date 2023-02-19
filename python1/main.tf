@@ -28,7 +28,7 @@ module "s3_permission_lambda_1" {
   statement_id = "AllowExecutionFromS3Bucket"
   action = "lambda:InvokeFunction"
   function_name = module.lambda_function_1.arn
-  princial = "s3.amazonaws.com"
+  principal = "s3.amazonaws.com"
   source_arn = data.terraform_remote_state.infra.outputs.s3_bucket_arn
 }
 module "data_s3_bucket_trigger_1" {
