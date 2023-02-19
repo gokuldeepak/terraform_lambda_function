@@ -58,6 +58,6 @@ variable "outpost_arn" {
     default = null
 }
 variable "tags" {
-    type = list(map(string))
-    default = [{}]
+    type = map(string)
+    default = {}
 }
