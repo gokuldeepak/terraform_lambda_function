@@ -34,10 +34,10 @@ module "eventbridge_permission_lambda_2" {
  
 module "eventbridge_event_trigger_lambda_2" {
   source = "../modules/eventbridge"
-  cw_event_rule_name = "Cloud Watch Event"
+  cw_event_rule_name = "Cloud-Watch-Event"
   cw_event_rule_description = "Trigger Lambda by every night"
   cw_event_rule_schedule_expression = "cron(30 16 ? * MON-FRI *)"
-  cw_event_target_id = "CW_Event_Name"
+  cw_event_target_id = "CW-Event-Name"
   cw_event_target_arn = module.lambda_function_2.arn
 }
 
